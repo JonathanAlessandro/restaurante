@@ -1,0 +1,41 @@
+@media (min-width: 749px) {
+    .modal-sacola-mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 748px), (max-height: 867px) {
+    .containerSacola {
+        display: none !important;
+        position: static !important;
+        width: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .containerPrincipal {
+        flex-direction: column !important;
+    }
+
+    .container2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-right: 0 !important;
+    }
+
+    .mobile-cart {
+        display: flex !important;
+    }
+
+    .mobile-cart[hidden] {
+        display: flex !important;
+    }
+
+    .cart-btn {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: var(--gray-100);
+    }
+}

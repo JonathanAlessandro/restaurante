@@ -1,0 +1,156 @@
+.containerSacola {
+    position: sticky;
+    top: 25%;
+    width: 20%;
+    background-color: rgba(243, 243, 235, 0.521);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.sacola-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.sacola-header p {
+    margin: 0;
+}
+
+.sacola-itens {
+    flex: 1;
+    overflow-y: auto;
+    margin: 16px 0;
+}
+
+#total-sacola {
+    margin: 0;
+    text-align: center;
+}
+
+.btn-finalizar-desktop {
+    width: 100%;
+}
+
+.containerPrincipal {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.container2 {
+    width: 80%;
+    padding-right: 20px;
+}
+
+.modal-backdrop {
+    z-index: 1050 !important;
+}
+
+.modal-sacola-mobile {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 4000;
+}
+
+.modal-sacola-content {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 0.3s ease;
+}
+
+.modal-sacola-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.modal-sacola-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.modal-sacola-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.limpar-sacola {
+    color: var(--danger);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.close-modal-sacola {
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.modal-sacola-body {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.sacola-vazia {
+    text-align: center;
+    color: var(--gray-500);
+    margin-top: 40px;
+}
+
+.modal-sacola-footer {
+    padding: 16px;
+    border-top: 1px solid var(--gray-200);
+}
+
+.btn-finalizar {
+    width: 100%;
+    padding: 14px;
+    background: var(--danger);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.sacola-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item-sacola {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray-200);
+    gap: 12px;
+}

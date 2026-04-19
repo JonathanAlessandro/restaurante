@@ -1,0 +1,56 @@
+/* Responsive rules for all pages */
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .modal {
+    border-radius: var(--radius);
+    max-height: 80vh;
+    margin: auto;
+  }
+
+  .cart-container,
+  .checkout-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product-image {
+    height: 160px;
+  }
+
+  body {
+    padding-bottom: 0;
+  }
+
+  .bottom-nav {
+    display: none;
+  }
+
+  .header {
+    padding: 16px 40px;
+  }
+
+  .products-container {
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .banner {
+    margin: 24px 40px;
+  }
+
+  .categories {
+    padding: 0 40px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
